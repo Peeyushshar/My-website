@@ -1,0 +1,142 @@
+            /* body {
+                 background-color: lightgrey;
+             }
+             
+             h1 {
+                 color: navy;
+                 margin-left: 20px;
+                 text-align: center;
+             }*/
+            
+            .container {
+                min-height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .herocontainer h1 {
+                font-size: 300%;
+            }
+            
+            img {
+                width: 30%;
+                height: 30%;
+                object-fit: cover;
+                float: left;
+                margin-right: 8px;
+            }
+            
+            .tittle a {
+                font-size: larger;
+                display: inline-block;
+                padding: 10px 30px;
+                background-color: transparent;
+                border: 2px solid crimson;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.01rem;
+                margin-top: 30px;
+                transition: 0.5s ease;
+                transition-property: background-color, color;
+                text-decoration: none;
+            }
+            
+            .social-icon {
+                text-align: right;
+                font-size: small;
+            }
+            
+            p {
+                color: black;
+                font-size: 1.2rem;
+                margin-top: 2px;
+                margin-left: 5px;
+                line-height: 2rem;
+                font-weight: 300;
+                letter-spacing: 0.05rem;
+            }
+            
+            .section-tittle p1 {
+                text-align: center;
+                font-size: 200%;
+                margin-right: 200px;
+            }
+            
+            .section-tittle h2 {
+                font-size: 250%;
+                text-align: center;
+            }
+            
+            .cta {
+                display: inline-block;
+                padding: 10px 30px;
+                background-color: transparent;
+                border: 2px solid crimson;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.01rem;
+                margin-top: 30px;
+                transition: 0.5s ease;
+                transition-property: background-color, color;
+                text-decoration: none;
+            }
+            
+            .cta:hover {
+                color: white;
+                background-color: crimson;
+            }
+            
+            #hero {
+                background-image: url("img3.jpg");
+                background-size: cover;
+                background-position: top center;
+                position: relative;
+                z-index: 1;
+            }
+            
+            #hero::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.8;
+            }
+            
+            #hero .hero {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 50px;
+                justify-content: flex-start;
+            }
+            
+            .herocontainer h1 {
+                display: block;
+                width: fit-content;
+                font-size: 4rem;
+                animation: peeyush_animation 0.5s ease forwards;
+                animation-delay: 1s;
+                animation-duration: 3s;
+            }
+            
+            @keyframes peeyush_animation {
+                100% {
+                    color: white;
+                }
+            }
+            
+            #hero h1:nth-child(1) {
+                animation-delay: 1s;
+            }
+            
+            #hero h1:nth-child(2) {
+                animation-delay: 2s;
+            }
+            
+            #hero h1:nth-child(3) {
+                animation-delay: 3s;
+            }
